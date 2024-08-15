@@ -1,10 +1,3 @@
----
-updated: 2024-08-15 07:34:51Z
-created: 2024-08-11 02:46:04Z
-latitude: 21.33539090
-longitude: -158.05689650
-altitude: 0.0000
----
 
 ## Objective
 The goal of this project was to set up and utilize a honeypot to capture and analyze malicious activities targeting a virtual machine hosted on Microsoft Azure. The honeypot used for this project was T-Pot, a multi-honeypot platform that includes several tools for threat analysis.
@@ -24,20 +17,20 @@ Next, I accesed the VM via SSH using the PuTTY application. To do so, we needed 
 
 
 <div style="display: flex; justify-content: center; gap: 10px; max-width: 70%;">
-    <img src="../_resources/c5542ebf7e7f8db84a8546e0f6bbf578.png" style="width: 100%; height: 100%; max-width: 50%; " />
-    <img src="../_resources/741c02feef791605ef584a8b94861803.png" style="width: 100%; height: 100%; max-width: 50%; " />
+    <img src="./_resources/c5542ebf7e7f8db84a8546e0f6bbf578.png" style="width: 100%; height: 100%; max-width: 50%; " />
+    <img src="./_resources/741c02feef791605ef584a8b94861803.png" style="width: 100%; height: 100%; max-width: 50%; " />
 </div>
 <div style="display: flex; justify-content: center; gap: 10px; max-width: 75%;">
-    <img src="../_resources/ff24bd6c960c37c521f939ffe41cafc1.png" style="width: 100%; height: 100%; max-width: 35%; " />
-    <img src="../_resources/bd64f174ee07698281d85193496303cc.png" style="width: 100%; height: 100%; max-width: 65%; " />
+    <img src="./_resources/ff24bd6c960c37c521f939ffe41cafc1.png" style="width: 100%; height: 100%; max-width: 35%; " />
+    <img src="./_resources/bd64f174ee07698281d85193496303cc.png" style="width: 100%; height: 100%; max-width: 65%; " />
 </div>
 
 <div style="display: flex; justify-content: center; gap: 10px; max-width: 75%;">
-    <img src="../_resources/6b5aab208a10404b629b62bcb14156e1.png" style="width: 100%; height: 100%; max-width: 35%; " />
+    <img src="./_resources/6b5aab208a10404b629b62bcb14156e1.png" style="width: 100%; height: 100%; max-width: 35%; " />
 </div>
 <div style="display: flex; justify-content: center; gap: 10px; max-width: 75%;">
-    <img src="../_resources/38ac3deddb18c9390ec245526aed4d18.png" style="width: 100%; height: 100%; max-width: 35%; " />
-    <img src="../_resources/74c16e42e1059dbec19d579a51d8ff9b.png" style="width: 100%; height: 100%; max-width: 65%; " />
+    <img src="./_resources/38ac3deddb18c9390ec245526aed4d18.png" style="width: 100%; height: 100%; max-width: 35%; " />
+    <img src="./_resources/74c16e42e1059dbec19d579a51d8ff9b.png" style="width: 100%; height: 100%; max-width: 65%; " />
 </div>
 
 
@@ -48,7 +41,7 @@ Next, we also need to install git, as it's required for cloning the T-Pot reposi
 
 With git being installed, we can continue to clone the T-Pot repository from GitHub. The repository contains all of the files that we will need to set up our honeypot. Clone the repository by running: `git clone https://github.com/telekom-security/tpotce`
 <div style="display: flex; justify-content: center; gap: 10px; max-width: 75%;">
-    <img src="../_resources/14c4e6aedc6dccf6e966f3a6764fa3a5.png" style="width: 100%; height: 100%; max-width: 50%; " />
+    <img src="./_resources/14c4e6aedc6dccf6e966f3a6764fa3a5.png" style="width: 100%; height: 100%; max-width: 50%; " />
 </div>
 
 ### T-Pot Repository Cloned
@@ -58,12 +51,12 @@ This launches the T-Pot installation wizard. It guides us through the installati
 
 During the installation process, we will also be prompted to create a web username and password. Write this down, this is important as it will be used to login to the T-Pot web interface once our installation finishes.
 <div style="display: flex; justify-content: center; gap: 10px; max-width: 75%;">
-    <img src="../_resources/69d789fea888d66814272af7671d75c3.png" style="width: 100%; height: 100%; max-width:50%; " />
-    <img src="../_resources/94ee46abb73a9e68d53e664369de4487.png" style="width: 100%; height: 100%; max-width: 50%; " />
+    <img src="./_resources/69d789fea888d66814272af7671d75c3.png" style="width: 100%; height: 100%; max-width:50%; " />
+    <img src="./_resources/94ee46abb73a9e68d53e664369de4487.png" style="width: 100%; height: 100%; max-width: 50%; " />
 </div>
 <br>
 <div style="display: flex; justify-content: center; gap: 10px; max-width: 75%;">
-    <img src="../_resources/6d5aca2a3d33a31028936d0f95ef70f0.png" style="width: 100%; height: 100%; max-width:50%; " />
+    <img src="./_resources/6d5aca2a3d33a31028936d0f95ef70f0.png" style="width: 100%; height: 100%; max-width:50%; " />
 </div>
 <br>
 Upon completion of the installation wizard, it will prompt us to reboot our system, and that we can re-connect via SSH on tcp/64295.
@@ -86,39 +79,39 @@ Once connected, we are greeted with a dashboard that offers a wide range of tool
 
 Dashboard
 <div style="display: flex; justify-content: center; gap: 10px; max-width: 75%;">
-    <img src="../_resources/c92a42cd47d2ae54c5982bd59e346970.png" style="width: 100%; height: 100%; max-width:50%; " />
+    <img src="./_resources/c92a42cd47d2ae54c5982bd59e346970.png" style="width: 100%; height: 100%; max-width:50%; " />
 </div>
 &nbsp;
 
 The Attack Map and Dashboard provide real-time visualizations of attack patterns and honeypot activity.
 <div style="display: flex; justify-content: center; gap: 10px; max-width: 75%;">
-    <img src="../_resources/6d5019dff2087a91d2158010ae55d7a5.png" style="width: 100%; height: 100%; max-width:60%; " />
+    <img src="./_resources/6d5019dff2087a91d2158010ae55d7a5.png" style="width: 100%; height: 100%; max-width:60%; " />
 </div>
 <br>
 <div style="display: flex; justify-content: center; gap: 10px; max-width: 75%;">
-    <img src="../_resources/cc0dcd7bb6263e4a996445d4960d692f.png" style="width: 100%; height: 100%; max-width:60%; " />
+    <img src="./_resources/cc0dcd7bb6263e4a996445d4960d692f.png" style="width: 100%; height: 100%; max-width:60%; " />
 </div>
 <br>
 Elasticvue enables detailed data exploration and visualization. Here, we identified a failed login attempt to the admin account.
 <div style="display: flex; justify-content: center; gap: 10px; max-width: 75%;">
-    <img src="../_resources/e833c77cac8ef4840514cfdabdef464e.png" style="width: 100%; height: 100%; max-width:60%; " />
+    <img src="./_resources/e833c77cac8ef4840514cfdabdef464e.png" style="width: 100%; height: 100%; max-width:60%; " />
 </div>
 <br>
 Here we can see Kibana's dashboard catalogue, which will allow us to get into specific data and visualize it easier by using individual dashboards. For example, the T-Pot dashboard displays various graphs and metrics, showcasing the volume and types of attacks
 <div style="display: flex; justify-content: center; gap: 10px; max-width: 75%;">
-    <img src="../_resources/30a7fe362b23facfb486fb99e4950a26.png" style="width: 100%; height: 100%; max-width:15%; " />
-    <img src="../_resources/85de27d68797b1e57b78b9cb48d44b58.png" style="width: 100%; height: 100%; max-width:55%; " />
+    <img src="./_resources/30a7fe362b23facfb486fb99e4950a26.png" style="width: 100%; height: 100%; max-width:15%; " />
+    <img src="./_resources/85de27d68797b1e57b78b9cb48d44b58.png" style="width: 100%; height: 100%; max-width:55%; " />
 </div>
 <br>
 One cool feature on the T-Pot dashboard is this wordcloud of passwords. The more often each password is used to attempt login, the bigger the password appears here.
 <div style="display: flex; justify-content: center; gap: 10px; max-width: 75%;">
-    <img src="../_resources/4b70fa826e461a4a44eea348a3a973f1.png" style="width: 100%; height: 100%; max-width:55%; " />
+    <img src="./_resources/4b70fa826e461a4a44eea348a3a973f1.png" style="width: 100%; height: 100%; max-width:55%; " />
 </div>
 <br>
 
 Clicking on a source IP of an attack in Kibana will perform a search using Talos Intelligence. This will provide more detailed information about the attackers, which can be useful for further tracking and blocking malicious IPs.
 <div style="display: flex; justify-content: center; gap: 10px; max-width: 75%;">
-    <img src="../_resources/0a30aaea0334589fc39a76c1b13795a4.png" style="width: 100%; height: 100%; max-width:55%; " />
+    <img src="./_resources/0a30aaea0334589fc39a76c1b13795a4.png" style="width: 100%; height: 100%; max-width:55%; " />
 </div>
 <br>
 
@@ -126,7 +119,7 @@ Clicking on a source IP of an attack in Kibana will perform a search using Talos
 
 Additionally, the interface includes sections that are dedicated to analyzing different exploits and vulnerabilities. This allows you identify exploits commonly used by attackers, which can help you to further enhance your system's defenses.
 <div style="display: flex; justify-content: center; gap: 10px; max-width: 75%;">
-    <img src="../_resources/fccf70f84f9f00fa67e1a1ada584a821.png" style="width: 100%; height: 100%; max-width:55%; " />
+    <img src="./_resources/fccf70f84f9f00fa67e1a1ada584a821.png" style="width: 100%; height: 100%; max-width:55%; " />
 </div>
 <br>
 
@@ -136,7 +129,7 @@ Additionally, the interface includes sections that are dedicated to analyzing di
 
 
 <div style="display: flex; justify-content: center; gap: 10px; max-width: 75%;">
-    <img src="../_resources/a3237dec50d3fb8fdfbb234283363762.png" style="width: 100%; height: 100%; max-width:45%; " />
+    <img src="./_resources/a3237dec50d3fb8fdfbb234283363762.png" style="width: 100%; height: 100%; max-width:45%; " />
 </div>
 <br>
 
@@ -147,8 +140,8 @@ With Spiderfoot, you can initiate scans against targets that were detected by yo
 
 Spiderfoot scan results provide extensive information about detected targets.
 <div style="display: flex; justify-content: center; gap: 10px; max-width: 75%;">
-    <img src="../_resources/36c4cf95f54f502f6970b5f745da4647.png" style="width: 100%; height: 100%; max-width:20%; " />
-    <img src="../_resources/912df699da5dc6c872a0f55a8e993cd6.png" style="width: 100%; height: 100%; max-width:35%; " />
+    <img src="./_resources/36c4cf95f54f502f6970b5f745da4647.png" style="width: 100%; height: 100%; max-width:20%; " />
+    <img src="./_resources/912df699da5dc6c872a0f55a8e993cd6.png" style="width: 100%; height: 100%; max-width:35%; " />
 </div>
 <br>
 
